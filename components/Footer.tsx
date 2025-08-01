@@ -1,6 +1,5 @@
 import React from "react";
 import {
-  Building,
   Facebook,
   Instagram,
   MessageCircle,
