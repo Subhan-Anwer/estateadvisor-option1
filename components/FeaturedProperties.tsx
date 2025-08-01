@@ -90,19 +90,6 @@ const FeaturedProperties = () => {
     );
   };
 
-  const getTypeColor = (type: string) => {
-    const colors = {
-      Plot: "bg-blue-500/20 text-blue-400 border-blue-500/30",
-      Commercial: "bg-green-500/20 text-green-400 border-green-500/30",
-      Apartment: "bg-purple-500/20 text-purple-400 border-purple-500/30",
-      Bungalow: "bg-orange-500/20 text-orange-400 border-orange-500/30",
-    };
-    return (
-      colors[type as keyof typeof colors] ||
-      "bg-gray-500/20 text-gray-400 border-gray-500/30"
-    );
-  };
-
   return (
     <section id="properties" className="py-20 relative overflow-hidden">
       {/* Background Elements */}
@@ -144,9 +131,7 @@ const FeaturedProperties = () => {
 
                 {/* Property Type Badge */}
                 <div
-                  className={`absolute top-4 left-4 px-3 py-1 rounded-full text-sm font-medium border ${getTypeColor(
-                    property.type
-                  )}`}
+                  className='absolute top-4 left-4 px-3 py-1 rounded-full text-sm font-medium border bg-green-500/60 text-white border-white/50'
                 >
                   {property.type}
                 </div>

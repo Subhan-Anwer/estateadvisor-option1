@@ -8,7 +8,7 @@ const Testimonials = () => {
   const testimonials = [
     {
       id: 1,
-      name: "Ahmed Hassan",
+      name: "Noman Sheikh",
       role: "Business Owner",
       image:
         "https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=150",

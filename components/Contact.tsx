@@ -29,19 +29,19 @@ const Contact = () => {
     {
       icon: Phone,
       title: "Call Us",
-      details: ["+92 21 1234 5678", "+92 300 1234567"],
+      details: ["+92 323 3385541", "+92 323 3385542"],
       action: "tel:+922112345678",
     },
     {
       icon: Mail,
       title: "Email Us",
-      details: ["info@estateadvisor.pk", "sales@estateadvisor.pk"],
-      action: "mailto:info@estateadvisor.pk",
+      details: ["sohailadvisor90@gmail.com"],
+      action: "mailto:sohailadvisor90@gmail.com",
     },
     {
       icon: MapPin,
       title: "Visit Us",
-      details: ["Office 123, Block A", "DHA Phase 2, Karachi"],
+      details: ["Shahbaz Comm lane 4, DHA Phase VI, Karachi"],
       action: "#",
     },
     {
@@ -230,13 +230,13 @@ const Contact = () => {
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <a
-                  href="tel:+922112345678"
+                  href="tel:+923233385541"
                   className="flex-1 bg-green-600/20 border border-green-600/30 text-green-400 font-semibold py-3 px-4 rounded-xl hover:bg-green-600/30 transition-all duration-300 text-center"
                 >
                   📞 Call Now
                 </a>
                 <a
-                  href="https://wa.me/923001234567"
+                  href="https://wa.me/923233385541"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex-1 bg-green-600/20 border border-green-600/30 text-green-400 font-semibold py-3 px-4 rounded-xl hover:bg-green-600/30 transition-all duration-300 text-center"

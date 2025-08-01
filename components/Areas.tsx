@@ -25,14 +25,14 @@ const Areas = () => {
       avgPrice: "₨ 8M+",
     },
     {
-      name: "Scheme 33",
+      name: "Bath Island",
       icon: TrendingUp,
       description: "Rapidly developing area with high ROI potential",
       properties: "800+",
       avgPrice: "₨ 6M+",
     },
     {
-      name: "Malir Cantt",
+      name: "Clifton Cantt",
       icon: Building,
       description: "Secure cantonment area with planned infrastructure",
       properties: "600+",

@@ -1,6 +1,7 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import { MessageCircle, X } from "lucide-react";
+import Image from "next/image";
 
 const WhatsAppButton = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -61,7 +62,7 @@ const WhatsAppButton = () => {
       {/* WhatsApp Button */}
       <button
         onClick={handleWhatsAppClick}
-        className="group relative w-14 h-14 bg-green-500 hover:bg-green-600 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 flex items-center justify-center transform hover:scale-110 animate-pulse hover:animate-none"
+        className="group relative w-14 h-14 bg-green-500 hover:bg-green-600 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 flex items-center justify-center transform hover:scale-110 hover:animate-none"
         aria-label="Chat on WhatsApp"
       >
         {/* Ripple Effect */}
@@ -69,10 +70,16 @@ const WhatsAppButton = () => {
         <div className="absolute inset-0 rounded-full bg-green-400 animate-ping opacity-20 animation-delay-1000"></div>
 
         {/* Icon */}
-        <MessageCircle className="w-7 h-7 text-white group-hover:scale-110 transition-transform duration-300" />
+        <Image
+          src="/whatsapp.png"
+          alt="WhatsApp Icon"
+          width={28}
+          height={28}
+          className="w-7 h-7 text-white group-hover:scale-110 transition-transform duration-300"
+        />
 
         {/* Online Indicator */}
-        <div className="absolute -top-1 -right-1 w-4 h-4 bg-green-400 border-2 border-white rounded-full animate-pulse"></div>
+        <div className="absolute top-0 -right-0.5 w-4 h-4 bg-red-600 border-2 border-white rounded-full "></div>
       </button>
     </div>
   );

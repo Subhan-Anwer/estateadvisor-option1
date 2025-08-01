@@ -8,6 +8,7 @@ import {
   Phone,
   MapPin,
 } from "lucide-react";
+import Image from "next/image";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -34,11 +35,19 @@ const Footer = () => {
   };
 
   const socialLinks = [
-    { icon: Facebook, href: "#", label: "Facebook" },
-    { icon: Instagram, href: "#", label: "Instagram" },
+    {
+      icon: Facebook,
+      href: "https://www.facebook.com/EstateAdvisor0323/",
+      label: "Facebook",
+    },
+    {
+      icon: Instagram,
+      href: "https://www.instagram.com/estateadvisor01/",
+      label: "Instagram",
+    },
     {
       icon: MessageCircle,
-      href: "https://wa.me/923001234567",
+      href: "https://wa.me/923233385541",
       label: "WhatsApp",
     },
   ];
@@ -53,8 +62,14 @@ const Footer = () => {
             <div className="lg:col-span-2">
               {/* Logo */}
               <div className="flex items-center space-x-3 mb-6">
-                <div className="w-12 h-12 bg-gradient-to-br from-yellow-400 to-yellow-600 rounded-lg flex items-center justify-center">
-                  <Building className="w-7 h-7 text-black" />
+                <div className="w-12 h-auto rounded-lg flex items-center justify-center">
+                  <Image
+                    src="/logo.png"
+                    alt="Logo"
+                    className="w-full h-auto text-black"
+                    height={28}
+                    width={28}
+                  />
                 </div>
                 <div>
                   <h3 className="text-xl font-bold text-yellow-400">
@@ -75,15 +90,15 @@ const Footer = () => {
               <div className="space-y-3">
                 <div className="flex items-center space-x-3 text-gray-300">
                   <Phone className="w-4 h-4 text-yellow-400" />
-                  <span>+92 21 1234 5678</span>
+                  <span>+92 323 3385541</span>
                 </div>
                 <div className="flex items-center space-x-3 text-gray-300">
                   <Mail className="w-4 h-4 text-yellow-400" />
-                  <span>info@estateadvisor.pk</span>
+                  <span>sohailadvisor90@gmail.com</span>
                 </div>
                 <div className="flex items-center space-x-3 text-gray-300">
                   <MapPin className="w-4 h-4 text-yellow-400" />
-                  <span>DHA Phase 2, Karachi</span>
+                  <span>Shahbaz Comm lane 4, DHA Phase VI, Karachi</span>
                 </div>
               </div>
             </div>
@@ -150,11 +165,6 @@ const Footer = () => {
         {/* Bottom Footer */}
         <div className="py-8 border-t border-gray-800">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-            {/* Copyright */}
-            <div className="text-gray-400 text-center md:text-left">
-              <p>&copy; {currentYear} Estate Advisor. All rights reserved.</p>
-            </div>
-
             {/* Social Links */}
             <div className="flex items-center space-x-6">
               <span className="text-gray-400 text-sm">Follow us:</span>
@@ -170,6 +180,11 @@ const Footer = () => {
                   <social.icon className="w-5 h-5" />
                 </a>
               ))}
+            </div>
+
+            {/* Copyright */}
+            <div className="text-gray-400 text-center md:text-left">
+              <p>&copy; {currentYear} Estate Advisor. All rights reserved.</p>
             </div>
 
             {/* Additional Links */}

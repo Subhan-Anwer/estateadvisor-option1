@@ -1,6 +1,7 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import { Menu, X, Building, Phone, Info } from "lucide-react";
+import Image from "next/image";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -30,8 +31,15 @@ const Header = () => {
         <div className="flex justify-between items-center py-4">
           {/* Logo */}
           <div className="flex items-center space-x-3">
-            <div className="w-12 h-12 bg-gradient-to-br from-yellow-400 to-yellow-600 rounded-lg flex items-center justify-center">
-              <Building className="w-7 h-7 text-black" />
+            <div className="w-12 h-auto rounded-lg flex items-center justify-center">
+              {/* <Building className="w-7 h-7 text-black" /> */}
+              <Image
+                src="/logo.png"
+                alt="Logo"
+                className="w-full h-auto text-black"
+                height={28}
+                width={28}
+              />
             </div>
             <div>
               <h1 className="text-xl font-bold text-yellow-400">
